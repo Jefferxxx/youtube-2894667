@@ -152,6 +152,7 @@ h1{
   grid-area: sidebar;
   background-color: #121212;
   padding-top: 10px;
+  overflow-x: scroll;
 }
 
 .sidebar-items{
@@ -195,7 +196,22 @@ i{
 p,a{
   font-size: 0.9rem;
 }
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+  background-color: #717171;
+
+}
 .content{
   grid-area: content;
 
 }
+
