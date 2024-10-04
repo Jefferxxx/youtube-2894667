@@ -7,6 +7,7 @@
 }
 
 /* layout */
+
 body{
   height: 100vh;
   display: grid;
@@ -167,51 +168,76 @@ h1{
   align-items:  center;
   display: flex;
   padding: 0 24px;
+  padding-left: 25px;
 }
 
 .sidebar-item i{
-  margin-right: 24px;
+  margin-right: 15px;
 }
 
 .sidebar-item:hover{
   background-color: #484848;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 5px;
 }
 hr{
-  border: solid 1px rgb(255, 255, 255, 0.1);
-  margin: 0 12px;
-} 
+  border: solid 1px rgba(255, 255, 255, 0.1);
+  margin: 12px 0;
+}
+.content{
+  grid-area: content;
 
+}
+.chips-warpper{
+  overflow-x: scroll;
+  max-width: calc(100vw - 240px);
+  background-color: #181818;
+  display: flex;
+  padding-left: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.01);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.01);
+  
+  
+}
+.chips-warpper::-webkit-scrollbar{
+  height: 6px;
+}
+.chips{
+  margin: 12px 6px;
+  background-color: #373737;
+  padding: 6px 12px;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 16px;
+}
+.chips:hover{
+  background-color: #d4d4d4;
+  transition: 0.55s;
+}
 h4{
   font-size: 0.9rem;
   text-transform: uppercase;
   color: #aaa;
   margin-left: 20px;
 }
-
 i{
   font-size: 1.5rem;
 }
-
 p,a{
   font-size: 0.9rem;
 }
-
 ::-webkit-scrollbar{
   width: 8px;
 }
-
 ::-webkit-scrollbar-thumb{
   background-color: transparent;
   border-radius: 5px;
 }
-
 .sidebar::-webkit-scrollbar-thumb{
   background-color: #717171;
-
 }
-.content{
-  grid-area: content;
 
+.chips-warpper::-webkit-scrollbar-thumb{
+  background: #717171;
 }
 
