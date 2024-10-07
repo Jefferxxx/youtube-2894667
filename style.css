@@ -327,7 +327,7 @@ p,a{
 }
 
 .upload{
-
+  margin-left: 5px;
 }
 
 .duracion{
@@ -339,4 +339,33 @@ p,a{
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 12px;
+}
+
+@media (max-width:1200px){
+  body{
+    grid-template-columns: 70px, 1fr;
+  }
+  .sidebar-item span, .sidebar-items h4{
+    display: none;
+  }
+
+  .sidebar-items{
+    padding: 0;
+  }
+
+  .sidebar-item{
+    padding: 0 20px;
+  }
+
+  .chips-warpper{
+    max-width: calc(100vw - 70px );
+  }
+}
+
+@media (max-width:800px){
+
+  .search-container{
+    display: none;
+  }
+
 }
