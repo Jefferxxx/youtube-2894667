@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(variables.css);
+@import url(header.css);
+@import url(sidebar.css);
+@import url(content.css);
+@import url(chips.css);
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/*
+Layout
+*/
+.youtube{
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 56px 1fr;
+  grid-template-areas: 
+  'header header'
+  'sidebar content';
+  height: 100vh;
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background: transparent;
+  border-radius: 5px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+  background-color: var(--scrollbar-sidebar);
+}
+
+@media (max-width:1200px){
+  .youtube{
+    grid-template-columns: 70px 1fr;
+  }
+  .side-menu__text, .side-menu__title{
+    display: none;
+  }
+  .side-menu__item{
+    padding: 0;
+  }
+  .side-menu__item{
+    padding: 0 20px;
+  }
+  .chips-wrapper{
+    max-width: calc(100vw - 70px);
+  }
+}
+@media (max-width:800px){
+  .search{
+    display: none;
+  }
+}

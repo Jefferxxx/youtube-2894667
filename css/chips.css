@@ -1,0 +1,36 @@
+.chips-envoltura {
+    max-width: calc(100vw - 240px);
+    overflow-x: scroll;
+    background-color: var(--color-container);
+    display: flex;
+    padding-left: 14px;
+    border-top: solid var(--hr-chips);
+    border-bottom: solid var(--hr-chips);
+}
+
+.chips-envoltura__chips {
+    margin: 12px 6px;
+    background-color: var(--relleno-lenguajes);
+    padding: 6px 12px;
+    color: var(--color-letra);
+    cursor: pointer;
+    border-radius: 15px;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+
+.chips-envoltura__chips-texto {
+    font-size: 0.9rem;
+}
+
+.chips-envoltura__chips:hover {
+    background-color: var(--hover-chips-lenguajes);
+}
+
+.chips-envoltura::-webkit-scrollbar {
+    height: 6px;
+}
+
+.chips-envoltura:hover::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-sidebar);
+}
